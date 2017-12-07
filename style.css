@@ -1,10 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400i,700,900');
 
-.container{
-    width:100%;
-    height:auto;
-    position: fixed;
-    z-index: 1000;
-}
+
 .header .header-text{
 color: white;
 display: inline-block;
@@ -12,40 +8,37 @@ border-width: 2px;
 padding:53m 1.75em;
 border-style: solid;
 margin-top: 200px;
+margin-left: 450px;
+
 }
 body{
-    background-color: grey;
     -webkit-background-size:cover;
     -moz-background-size:cover;
     -o-background-size:cover;
     background-size: cover;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Roboto;
     opacity: 0.8;
 
 }
 footer{
-    padding:20px;
-    border:outset;
-    background-color: black;
-    color:white;
-    margin-top:100%;
+    background-color:#0099cc;
+    color: #ffffff;
+    text-align:center;
+    font-size: 12px;
+    padding: 15px;
 }
 
-nav ul  {
-    background-color:rgba(107, 67, 67, 0.6);
-    overflow:hidden;
-    color:white;
-    padding: 0;
-    text-align: center;
-    opacity: 0.7;
-    filter:alpha (opacity=70);
-    position: sticky;
-    left:0;
+    nav ul{
+        max-height:0;
+        display: block;
     
 }
-      nav ul li{
-        display:inline-block;
-        padding:20px;
+
+        nav ul li{
+            box-sizing: border-box;
+            width:100%;
+            padding:15px;
+            text-align: left;
     }
     nav ul li a{
         text-decoration:none;
@@ -59,15 +52,14 @@ nav ul  {
             transition: all 0.8s ;
             
         }
-        body{
-            margin:0;
-            text-align: center;
-        }
+        
     
     .header{
         width:100%;
-        height:400px;
+        height:auto;
         background-image:url(./image/header.jpg);
+
+    
 
     }
     .icons {
@@ -96,13 +88,8 @@ nav ul  {
     }
     
     .web-developer{
-        padding:1px;        
-        width:509px;
-        height:500px;
-        max-width: 100%;
-        margin-left: 100px;
-       transition: 0.6s;
-       background-position: center;
+        width:500px;
+        height: auto;
        float: left;
     
     }
@@ -119,46 +106,47 @@ nav ul  {
     
     font-size:12px;
     
-        
-    } 
-    .web-developer:hover{
-        border:2px solid green;
-        width:509x;
-        height:500px;
 
     }
 
+    .half1 {
+        width:35%;
+        display:inline-block;
+        background: black;
+        color: white;
+        font-size: 0.9em;
+        font-weight: 100;
+        margin:30px 20px;
+        padding:10px;
+
+
+    }
+    .half2 {
+        width:35%;
+        display:inline-block;
+        background: black;
+        color: white;
+        font-size: 0.9em;
+        font-weight: 100;
+        margin:30px 20px;
+        padding:10px;
+
+    }
     .photography{
-        padding:1px;
-        width:509px;
-        height:500px;
-        max-width: 100%;
-        margin-left: 100px;
-        transition:0.6s ;
-        background-position: center;
-        float: right;
+        width:500px;
+        height: auto;
+        margin-top:150px;
+        margin-right: 500px;
 
     }
-    .photography:hover{
-        border:2px solid green;
-        width:509px;
-        height:559px;
 
-    }
     .header h1{
         font-family: sans-serif;
         text-align:center;
 
     }
     .handle{
-    width:100%;
-    background:rgba(107, 67, 67, 0.6);;
-    text-align: center;
-    box-sizing:border-box;
-    padding: 15px 10px;
-    cursor: pointer;
-    color: white;
-    display:none;
+        display:inline-block;
 
     }
 /*
@@ -170,25 +158,42 @@ nav ul  {
         display:inline;
     }
     */
-
-       @media screen and (max-width:800px){
-           nav ul{
-               max-height:0;
-               display: block;
-
-               }
+        
+           @media screen and (min-width:500px){
+            nav ul  {
+                background-color:rgba(107, 67, 67, 0.6);
+                overflow:hidden;
+                color:white;
+                padding: 0;
+                text-align: center;
+                opacity: 0.7;
+                filter:alpha (opacity=70);
+                position: sticky;
+                left:0;
+ 
+                }
+                .container{
+                    width:100%;
+                    height:auto;
+                    position: fixed;
+                    z-index: 1000;
+                }
+            
+                nav ul li{
+                    display:inline-block;
+                    padding:20px;
+                
+            }
            
-           nav ul li{
-               box-sizing: border-box;
-               width:100%;
-               padding:15px;
-               text-align: left;
-               
-           }
-           .handle{
-               display:block;
-               
-           }
+                .handle{
+                    width:100%;
+                    background:rgba(107, 67, 67, 0.6);;
+                    text-align: center;
+                    box-sizing:border-box;
+                    padding: 15px 10px;
+                    cursor: pointer;
+                    color: white;
+                    display:inline-block;
 /*
            .menu-hide {
                display:block; */
