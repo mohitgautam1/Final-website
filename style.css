@@ -28,7 +28,6 @@ footer{
     nav ul{
         background: #444;
 
-
     
 }
 
@@ -45,6 +44,8 @@ footer{
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         color: #fff;
         text-decoration: none;
+       
+        
    
             
         }
@@ -56,10 +57,9 @@ footer{
         }
         
 #menu{
-    position: fixed;
+    display: inline-block;
     width: 200px;
     height: 100%;
-
 background: #15171919;
 
 }
@@ -81,7 +81,7 @@ background: #15171919;
     }
     .img1{
         padding:1px;
-        width:50px;
+        width:55px;
         height:50px;
         margin-left:80px;
         margin-top: 10px;
@@ -175,24 +175,60 @@ height:450px;
     background: #eaeaee;
     color: #333;
     padding-bottom: 2em;
+    
 
 }
+#section-b{
+   
+    padding: 2em 1em 1em;
+}
+#section-b ul{
+     list-style: none;
+     margin: 0;
+     padding: 0;
+ }   
+ #section-b li{
+     margin-bottom: 1em;
+     background: #fff;
+     color: #333;
+ }
 
+ 
 
-    
+article {
+    background-color:#125244;
+    padding-top:20px;
+    padding-bottom:20px;
+    margin:0 auto;
+    color: white;
+}
+
+.second {
+margin-top:20px;
+background-color:#0a1814;
+
+}
 
     .handle{
         display:inline-block;
 
     }
-    @media screen and (min-width : 500px) {
-        nav ul li{
-            display:inline-block;
-            margin: .2em 0;
-            padding:1em 0.9em;
-    }
-    
+    @media screen and (min-width : 700px) {
+      
+        #section-b ul{
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        #section-b li{
+            width: 30%;}
+            height: 20%;
+            
+     
+   
+
 /*
+
     .menu-hide {
         display:none;
     }
