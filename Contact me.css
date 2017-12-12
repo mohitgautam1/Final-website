@@ -2,19 +2,35 @@
   box-sizing: border-box;
 }
 
-body{
-  background:#92bde7;
-  color:#485e74;
-  line-height:1.6;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding:1em;
-}
 
 .container{
-  max-width:1170px;
+  max-width:1000px;
   margin-left:auto;
   margin-right:auto;
   padding:1em;
+
+  
+}
+#showcase1 {
+  max-height: 450px;
+ color: white;
+ text-align: center;
+ margin-top:20px;
+}
+.mypic
+{
+ 
+  position: relative;
+  width: 200px;
+  height: 200px;
+  padding:1px;
+  width:200px;
+  height:200px;
+  margin-left:80px;
+  margin-top: 10px;
+  border:solid;
+  border-radius:20%;
+ 
 }
 
 ul{
@@ -24,6 +40,7 @@ ul{
 
 .brand{
   text-align: center;
+  margin-top: 200px;
 }
 
 .brand span{
@@ -39,16 +56,18 @@ ul{
 }
 
 .company-info{
-  background:#c9e6ff;
+  background:#0a1014;
 }
 
 .company-info h3, .company-info ul{
   text-align: center;
   margin:0 0 1rem 0;
+  color: rgb(168, 129, 129)
 }
 
 .contact{
-  background:#f9feff;
+  background:#0a1014;
+  
 }
 
 /* FORM STYLES */
@@ -60,6 +79,7 @@ ul{
 
 .contact form label{
   display:block;
+  color:rgb(168, 129, 129);
 }
 
 .contact form p{
@@ -73,7 +93,7 @@ ul{
 .contact form button, .contact form input, .contact form textarea{
   width:100%;
   padding:1em;
-  border:1px solid #c9e6ff;
+  border:1px dotted #0a151f;
 }
 
 .contact form button{
@@ -84,7 +104,7 @@ ul{
 
 .contact form button:hover,.contact form button:focus{
   background:#92bde7;
-  color:#fff;
+  color:blue;
   outline:0;
   transition: background-color 2s ease-out;
 }

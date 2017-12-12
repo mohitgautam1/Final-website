@@ -1,20 +1,22 @@
-/*let menushow = document.getElementById("menu").classList;
-let button = document.getElementById("menushow");
+var i= 0; 
+var images=[];
+var time=3000;
 
-button.addEventListener("click", showmenu);
+images[0]='home2.png';
+images[0]='home3.png';
 
-function showmenu() {
-
-    console.log("this is menu lass " + menushow);
-
-    if(menushow == "menu-hide") {
-        menushow.remove("menu-hide");
-    menushow.add("menu-show");
-    }
-    else {
-        menushow.remove("menu-show");
-        menushow.add("menu-hide");
-    }
+function changeIMG(){
+    document.webdeveloper.src = images[i];
+    if(i< images.lenght - 1){
+        i++;
     
+    } else {
+         i=0;
+     }
+     setTimeout("changeIMG(" , time);
+
+
 }
-/*
+window.onload=changeIMG;
+
+
