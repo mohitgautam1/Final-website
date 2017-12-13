@@ -110,7 +110,7 @@ ul{
 }
 
 /* LARGE SCREENS */
-@media(min-width:700px){
+@media(min-width:645px){
   .wrapper{
     display: grid;
     grid-template-columns: 1fr 2fr;
