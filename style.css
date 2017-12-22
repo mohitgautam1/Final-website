@@ -8,7 +8,6 @@ body{
     background:floralwhite;
     color:#0b7294;
     font-family:Roboto;
-    
     text-align: center;
     background-image:url("image/backgrounddark.jpg");
     background-repeat: no-repeat;
@@ -16,6 +15,41 @@ body{
    
 
 }
+main {
+    display: block;
+    /* height cannot be auto or 100% */
+    height: 1000px;
+    /* overflow-y can also be scroll */
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+ .arrow{
+    position: fixed;;
+    top:50%;
+    left: 50%;
+    margin-top: 550px;
+    margin-left: -50px;
+    font-size: 90px;
+    text-align: center;
+    transform: rotate(90deg);
+    animation: bouncearrow 1s infinite;
+    color: white;
+    background: black;
+    opacity: 0.8;
+    
+
+}
+@keyframes bouncearrow{
+0%{top: 0px;}
+50%{top:20px; color:lightcyan;}
+100%{top:0px;}
+
+}
+.arrow:hover{
+    background: gray;
+}
+
 
 footer{
     background-color:#0099cc;
@@ -25,51 +59,40 @@ footer{
     padding: 15px;
 }
 
-    nav ul{
-        background: #444;
-
-    
-}
-
         nav ul li{
              color: rgba(230,230,230,0.9);
-             padding:15px 10px;
              list-style: none;
-            border-bottom: 1px solid rgba(100,100,100,0.3);
+           
+            float: left;
+            margin: 0;
+            
 
     }
     nav ul li a{
-        margin:0;
-        padding: 0;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        color: #fff;
-        text-decoration: none;
        
+        text-decoration: none;
+        color: #555;
+        padding: 14px 16px;
+    }
+       
+nav {
+    
+   text-align: center;
+    padding: 10px;
+    background: rgba(200,200,200,0.96);
+    position: fixed;
+    width: 100%;
+    z-index:999;
+  }
+
+  
+  nav a:hover {
+    color: #fff;
         
    
             
-        }
-        #menu .btn1{
-            position: absolute;
-            left: 230px;
-            top:20px;
-
-        }
-        
-#menu{
-    display: inline-block;
-    width: 200px;
-    height: 100%;
-background: #15171919;
-
-}
-
-
-.btn1{
-    display: block;
-    width: 30px;
-    height: 5px;
     
+        
 }
     .icons {
         width:100%;
@@ -102,6 +125,30 @@ background: #15171919;
     height:95px;
     margin-left:80px;
     margin-top: 10px;
+}
+.second ul{
+    list-style: none;
+}
+.second li{
+    display: inline-block;
+    width:50px;
+    height:50px;
+    margin-right: 50px;
+    box-shadow: 0px 1px 3px red;
+    border-radius: 50px;
+    position: relative;
+
+}
+    .second li a{
+color: blueviolet;
+font-size: 24px;
+position: absolute;
+top:50%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+    
+
 }
 @keyframes animate{
     0%{
@@ -193,6 +240,9 @@ background: #15171919;
         padding:1em 2em;
         border:1px double grey;
         margin: .5em 0;
+        overflow-y: scroll;
+        
+        
     }
     .btn:hover{
         background: grey;
@@ -218,22 +268,20 @@ background: #15171919;
        
     }
 .bg-image{
-position: absolute;
+
 background-image:url("image/header.jpg");
 background-position:center;
 background-repeat: no-repeat;
 background-size:cover;
 width:100%;
 height:450px;
-}
-#showcase h1{
-    padding-top: 100px;
-    padding-bottom: 0;
+
+
 }
 #section-a{
     background: #eaeaee;
     color: #333;
-    padding-bottom: 2em;
+  
     
     
 
@@ -284,7 +332,50 @@ color: white;
 
     }
     
+        .text{
+            display:block;
+            margin-top:90px ;
+            font-size: px;
+            font-weight: 700;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: gray;
+            width: 50% auto;
+            animation: bouncetext 3s infinite;
+            
+        
+      }
+
+      @keyframes bouncetext{
+        25%{transform:translateX(10px); color:lightcyan;}
+        50%{transform:translateX(0); color:lightcyan;}
+        75%{transform:translateX(-10px);}
+        
+      }
+      
+      .text:hover{
+        
+        color: red;
+      }
+      h3{
+          font-size: 175%;
+          line-height: 155%;
+          color: black;
+          text-align: center;
+          text-transform: uppercase;
+          padding: 0;
+          margin: 0;
+          margin-left: 0;   
+          border: solid 10px grey;
+          background: grey;
+          opacity: 0.8;
+      }
+
+
+    
     @media screen and (min-width : 645px) {
+      
+        
       
         #section-b ul{
             display: flex;
@@ -301,6 +392,7 @@ color: white;
                 padding-bottom:20px;
                 margin:0 auto;
                 color: white;
+                position: relative;
             }
             
             .second {
@@ -315,17 +407,60 @@ color: white;
                 padding-bottom: 8em;
                 
             }            
-            .img2{
+            #section-d .img2{
                 width:200px;
                 height:180px;
                 margin-left:80px;
                 margin-top: 10px;
                 padding: 15px;
                 position: relative;
+                border: 10px solid black;
+                border-radius: 100%;
+                border-top-color: #ff6a00;
+               
+                
             }
-     
-   
+            
+    
+             .text{
+            display:block;
+           margin-top:90px ;
+             font-size: 25px;
+           font-weight: 700;
+           letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: gray;
+        
+        
+      }
 
+      @keyframes bouncetext{
+        25%{transform:translateX(10px); color:lightcyan;}
+        50%{transform:translateX(0); color:lightcyan;}
+        75%{transform:translateX(-10px);}
+      }
+      
+      .text:hover{
+        
+        color: red;
+        
+      }
+
+
+    
+        
+            @keyframes round {
+                from{transform: rotate(0deg)}
+                to{transform:rotate(360deg)}
+            }
+            #section-d .img2:hover{
+                animation:round 1s linear ;
+                transition: border 0.3s linear 0s;
+            }
+       
+       
+       
+       
 /*
 
     .menu-hide {
