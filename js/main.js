@@ -1,4 +1,3 @@
-//I took this from the lab of front end web development, it was simple and all i needed to make my nav, the style is different but there was no requirement for me to change the js
 //Get all elements within the DOM with id names below
 const menuButton = document.getElementById("menu");
 const navMenu = document.getElementById("nav-menu");
@@ -6,8 +5,7 @@ let toggle = false;
 //the function will be called when the event of click has occured
 menuButton.addEventListener("click", toggleMenu);
 
-//the toggle will allow when the menuButton has the event of click, it will know the style the menu already is
-//the function checks for whether the menu is open or closed with a boolean exp
+
 function toggleMenu() {
 	if (toggle) {
 		navMenu.classList.remove("show-menu"),
@@ -65,3 +63,34 @@ function checkForm() {
     var pattern = /^([a-zA-Z0-9_.-])+@(([a-zA-Z0-9-])+.)+([a-zA-Z0-9]{2,4})+$/;
     return pattern.test(inputvalue);
    }
+
+   (function() {
+    
+          'use strict';
+    
+          var items = document.querySelectorAll(".timeline li");
+    
+          function isElementInViewport(el) {
+            var rect = el.getBoundingClientRect();
+            return (
+              rect.top >= 0 &&
+              rect.left >= 0 &&
+              rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+              rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+          }
+    
+          function callbackFunc() {
+            for (var i = 0; i < items.length; i++) {
+              if (isElementInViewport(items[i])) {
+                items[i].classList.add("in-view");
+              }
+            }
+          }
+    
+          window.addEventListener("load", callbackFunc);
+          window.addEventListener("resize", callbackFunc);
+          window.addEventListener("scroll", callbackFunc);
+        
+    
+    })();

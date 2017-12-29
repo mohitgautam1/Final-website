@@ -52,7 +52,7 @@ footer{
     font-size: 1.2em;
     font-weight: 900;
     text-decoration: none;
-    padding: 0px;
+
     text-transform: uppercase;
     color: white;
     transition: all .3s ease-in-out;
@@ -87,7 +87,6 @@ footer{
     background-color: #000102;;
 }
 .show-menu {
-   
     display:block;
 }
 nav ul {
@@ -149,8 +148,8 @@ header li{
     
 }
 .img2{
-    width:95px;
-    height:95px;
+    width:300px;
+    height:300px;
    left:50%;
    top:50%;
    margin-top: 2px;
@@ -165,7 +164,6 @@ header li{
     height:50px;
     margin-right: 50px;
     box-shadow: 0px 1px 3px red;
-   
     position: relative;
     overflow: hidden;
    
@@ -260,10 +258,8 @@ position: relative;
         }
     
 
-    }#section-d progressbar{
-        margin: 20px;
-        width: 400px;
-        height: 8px;
+    }#section-d li{
+        list-style: none;
        
 }
     
@@ -383,11 +379,209 @@ height:450px;
     
     padding-bottom:100px;
     margin:0 auto;
+}
+#section-d ul{
+    list-style: none;
     
+}
+
+
+#section-d ul li{
+    display: inline-block;
+    width:190px;
+    height:190px;
+    box-shadow: 0px 1px 3px red;
+    border-radius: 110px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    margin: 20px;
+}
+    .img2{          
+    width: 200px;
+    height: 200px;
+    left: 50%;
+    top: 50%;
     
+    transform: translate(-0%, 0%)
+}
+#section-d ul li:before{
     
+    content: '';
+    width: 100%;
+    height: 100%;
+    top:100%;
+    left: 0%;
+    display: inline-block;
+    position: absolute;
+    transition: .3s;
+}
+
+
+#section-d ul :nth-child(1):before{
+   background-color:#ec7808;
+}
+#section-d ul :nth-child(2):before{
+    background-color: rgb(3, 71, 128);
+}
+#section-d ul :nth-child(3):before{
+    background-color:yellow;
+}
+#section-d ul :nth-child(4):before{
+    background-color:rgb(20, 141, 95);
 
 }
+#section-d ul :nth-child(5):before{
+    background-color: #0074aa;
+}
+#section-d ul :nth-child(6):before{
+    background-color:rgb(219, 120, 6);
+}
+#section-d ul li:nth-child(1):hover:before{
+    top:20%;
+}
+#section-d ul li:nth-child(2):hover:before{
+    top:30%;
+
+}
+#section-d ul li:nth-child(3):hover:before{
+    top:40%;}
+   
+    #section-d ul li:nth-child(4):hover:before{
+        top:20%;}
+
+        #section-d ul li:nth-child(5):hover:before{
+            top:50%;}
+
+            #section-d ul li:nth-child(6):hover:before{
+                top:60%;}
+
+
+                #section-e{
+                    background-color: white;
+                    color: #333;
+                    
+                    padding-bottom:100px;
+                    margin:0 auto;
+                }
+
+
+                
+            
+            
+                
+                .intro {
+                  background: tomato;
+                  padding: 100px 0;
+                }
+                
+                .container {
+                  width: 90%;
+                  max-width: 900px;
+                  margin: 0 auto;
+                  text-align: center;
+                }
+                
+               
+                
+                .timeline ul {
+                  background: #ffffff;
+                  padding: 50px 0;
+                }
+                
+                .timeline ul li {
+                  list-style-type: none;
+                  position: relative;
+                  width: 6px;
+                  margin: 0 auto;
+                  padding-top: 50px;
+                  background: tomato;
+                }
+                
+                .timeline ul li::after {
+                  content: '';
+                  position: absolute;
+                  left: 50%;
+                  bottom: 0;
+                  transform: translateX(-50%);
+                  width: 30px;
+                  height: 30px;
+                  border-radius: 50%;
+                  background: inherit;
+                }
+                
+                .timeline ul li div {
+                  position: relative;
+                  bottom: 0;
+                  width: 200px;
+                  padding: 15px;
+                  background: tomato;
+                }
+                
+                .timeline ul li div::before {
+                  content: '';
+                  position: absolute;
+                  bottom: 7px;
+                  width: 0;
+                  height: 0;
+                  border-style: solid;
+                }
+                
+                .timeline ul li:nth-child(odd) div {
+                  left: 30px;
+                }
+                
+                .timeline ul li:nth-child(odd) div::before {
+                  left: -15px;
+                  border-width: 8px 16px 8px 0;
+                  border-color: transparent tomato transparent transparent;
+                }
+                
+                .timeline ul li:nth-child(even) div {
+                  left: -250px;
+                }
+                
+                .timeline ul li:nth-child(even) div::before {
+                  right: -15px;
+                  border-width: 8px 0 8px 16px;
+                  border-color: transparent transparent transparent tomato;
+                }
+                
+                time {
+                  display: block;
+                  font-size: 1.2rem;
+                  font-weight: bold;
+                  margin-bottom: 8px;
+                }
+                
+                .timeline ul li::after {
+                  transition: background .5s ease-in-out;
+                }
+                
+                .timeline ul li.in-view::after {
+                  background: tomato;
+                }
+                
+                .timeline ul li div {
+                  visibility: hidden;
+                  opacity: 0;
+                  transition: all .5s ease-in-out;
+                }
+                
+                .timeline ul li:nth-child(odd) div {
+                  transform: translate3d(200px, 0, 0);
+                }
+                
+                .timeline ul li:nth-child(even) div {
+                  transform: translate3d(-200px, 0, 0);
+                }
+                
+                .timeline ul li.in-view div {
+                  transform: none;
+                  visibility: visible;
+                  opacity: 1;
+                }
+                
 
 article {
     background-color:#125244;
@@ -398,15 +592,15 @@ article {
 }
 
 .second {
-margin-top:20px;
+margin-top:10px;
 background-color:#0a1814;
 color: white;
+height: 25%;
 
 }
 
     .handle{
         display:inline-block;
-
     }
     
         .text{
@@ -421,8 +615,6 @@ color: white;
         
       }
 
-    
-      
       .text:hover{
         
         font-weight: 900;
@@ -454,7 +646,9 @@ color: white;
 
     
     @media screen and (min-width : 645px) {
-      
+        
+        
+        
         #section-a{
             display: flex;
             justify-content: space-around;
@@ -474,8 +668,7 @@ color: white;
             font-weight: 900;
             text-decoration: none;
             padding: 0px;
-            margin-top: 15px;
-            margin-left: 10px;
+            
             text-transform: uppercase;
             color: white;
             transition: all .3s ease-in-out;
@@ -485,6 +678,7 @@ color: white;
         .img1{
             margin-right:10px;
             position: relative;
+
         }
       
         #section-b ul{
@@ -514,9 +708,10 @@ color: white;
             
             }
             #section-d{
-                background: #eaeaee;
+                background-color: white;
                 color: #333;
                 padding-bottom: 8em;
+                margin-bottom: 10px;
                 
                 
                 
@@ -529,15 +724,22 @@ color: white;
             
             #section-d ul li{
                 display: inline-block;
-                width:100px;
-                height:100px;
-                margin-right: 50px;
+                width:190px;
+                height:190px;
                 box-shadow: 0px 1px 3px red;
-                border-radius: 100px;
+                border-radius: 110px;
                 position: relative;
                 overflow: hidden;
-                           
-
+                padding: 20px;
+                margin: 20px;
+            }
+                .img2{          
+                width: 200px;
+                height: 200px;
+                left: 50%;
+                top: 50%;
+                
+                transform: translate(-0%, 0%)
             }
             #section-d ul li:before{
                 
@@ -545,7 +747,7 @@ color: white;
                 width: 100%;
                 height: 100%;
                 top:100%;
-                left: 50%;
+                left: 0%;
                 display: inline-block;
                 position: absolute;
                 transition: .3s;
@@ -553,23 +755,23 @@ color: white;
 
         
             #section-d ul :nth-child(1):before{
-               background-color: pink;
+               background-color:#ec7808;
             }
             #section-d ul :nth-child(2):before{
-                background-color: blue;
+                background-color: rgb(3, 71, 128);
             }
             #section-d ul :nth-child(3):before{
-                background-color:black;
+                background-color:yellow;
             }
             #section-d ul :nth-child(4):before{
-                background-color:gray;
+                background-color:rgb(20, 141, 95);
 
             }
             #section-d ul :nth-child(5):before{
-                background-color: green;
+                background-color: #0074aa;
             }
             #section-d ul :nth-child(6):before{
-                background-color:red;
+                background-color:rgb(219, 120, 6);
             }
 
     
