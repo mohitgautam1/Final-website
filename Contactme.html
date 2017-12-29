@@ -6,74 +6,60 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="style.css"/>  
   <title>Mohit-Contact me</title>
-  <link rel="stylesheet" href="contact me.css">
+  <link rel="stylesheet" href="contactme.css">
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 </head>
 <body>
   
-        <nav>
-                <ul id="menu"> 
-
-                <a href="" class=""></a>
-                        <li><a href='index.html' >HOME</a></li>
-                        <li><a href='#'>RESUME</a></li>
-                          <li><a href='Contactme.html'>CONTACT ME</a></li>
-                    </ul>
-                </nav>
+    <header id="header1"></header>
+    <nav>
+        <a id="menu" class="ion-navicon" href='#'></a>
+        <ul id="nav-menu">     
+                <li><a href='index.html' >HOME</a></li>
+                <li><a href='Resume.html'>RESUME</a></li>
+                  <li><a href='Contactme.html'>CONTACT ME</a></li>
+            </ul>
+            
+        </nav>
+        
+      
+      </header>
+      <main>
+          <header id="showcase" class="grid">
     <!-- header -->
-    <div class="bg-image"></div>
+    <div class="bg-image">
     <header id="showcase1" class="grid">
         <img class="mypic" src="image/noimage.jpg" alt"myimg">
     </header>
   </div>
-  <div class="container">
-    <h1 class="brand"><h1>Contact Me</h1>
-      <section class="company-info">
-        <h3>Mohit Gautam</h3>
-        <ul>
-          <li><i class="#"></i> Forest Fields,Nottingham</li>
-          <li><i class="#"></i> 07476407670</li>
-          <li><i class="#"></i> mohitgautam256@hotmail.com</li>
-        </ul>
-      </section>
-      <section class="contact">
-        <h3>Email Us</h3>
-        <form>
-          <p>
-            <label>Name</label>
-            <input type="text" name="name">
-          </p>
-          <p>
-            <label>Company</label>
-            <input type="text" name="company">
-          </p>
-          <p>
-            <label>Email Address</label>
-            <input type="email" name="email">
-          </p>
-          <p>
-            <label>Phone Number</label>
-            <input type="text" name="phone">
-          </p>
-          <p class="full">
-            <label>Message</label>
-            <textarea name="message" rows="5"></textarea>
-          </p>
-          <p class="full">
-            <button>Submit</button>
-          </p>
-        </form>
-      </section>
-    </div>
-      <section>
-
-          
-          <article class="second">
-                  <h2 class="content-title">About Myself</h2>
-                  <p>Lorem20dfajslkfjdslkfnakj sdfnjksdnjkgnvjkndk jvnakjsdnfksdc mlksmd dfjasldfjlskdfmlkamclksdnj dk</p>
-          </article>
+           <form onsubmit="return checkForm();" method="post" action="mailto:Mohitgautam256@hotmail.com">
+              <div class="contact_name">
+                <span class="contact_label">Name:*</span>
+                <input type="text" id="name" /><br />
+                <div class="error" id="nameError">Required: Please enter your name<br /></div>
+              </div> <!-- .contact_name ends -->
+             
+              <div class="contact_email">
+                <span class="contact_label">Email:*</span>
+                <input type="text" id="email" /><br />
+                <div class="error" id="emailError">Required: Please enter your email address<br /></div>
+              </div> <!-- .contact_email ends -->
+             
+              <div class="contact_comment">
+                <span class="contact_label">Message:*</span>
+                <textarea id="comment" rows="10" cols="35"></textarea>
+                <div class="error" id="commentError">Required: Please enter a message<br /></div>
+              </div> <!-- .contact_comment ends -->
+             
+              <div class="contact_submit">
+                <input type='submit' value='Submit' />
+              </div> <!-- .contact_submit ends -->
+              <p><span class="contact_nb">NB: * Donotes required field</span></p>
+            </form>
+            
   
               
     
-  
+          <script src="js/main.js"></script>
 </body>
 </html>

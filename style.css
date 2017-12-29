@@ -15,6 +15,13 @@ body{
    
 
 }
+
+    p{
+        
+        width: 90%;
+        display: block;
+        margin: 30px auto;
+}
 main {
     display: block;
     /* height cannot be auto or 100% */
@@ -22,22 +29,7 @@ main {
     /* overflow-y can also be scroll */
     overflow-y: scroll;
     scroll-behavior: smooth;
-}
 
- .arrow{
-    position: fixed;;
-    top:50%;
-    left: 50%;
-    margin-top: 550px;
-    margin-left: -50px;
-    font-size: 90px;
-    text-align: center;
-    transform: rotate(90deg);
-    animation: bouncearrow 1s infinite;
-    color: white;
-    background: black;
-    opacity: 0.8;
-    
 
 }
 @keyframes bouncearrow{
@@ -46,9 +38,7 @@ main {
 100%{top:0px;}
 
 }
-.arrow:hover{
-    background: gray;
-}
+
 
 
 footer{
@@ -58,73 +48,113 @@ footer{
     font-size: 12px;
     padding: 15px;
 }
-
-        nav ul li{
-             color: rgba(230,230,230,0.9);
-             list-style: none;
-           
-            float: left;
-            margin: 0;
-            
-
-    }
-    nav ul li a{
-       
-        text-decoration: none;
-        color: #555;
-        padding: 14px 16px;
-    }
-       
-nav {
+.skills{
+    font-size: 1.2em;
+    font-weight: 900;
+    text-decoration: none;
+    padding: 0px;
+    text-transform: uppercase;
+    color: white;
+    transition: all .3s ease-in-out;
+    background-color: rgb(0, 0, 0);
+    border: solid 0px grey;
     
-   text-align: center;
-    padding: 10px;
-    background: rgba(200,200,200,0.96);
-    position: fixed;
-    width: 100%;
-    z-index:999;
-  }
-
-  
-  nav a:hover {
-    color: #fff;
-        
-   
-            
-    
-        
 }
-    .icons {
+.skills:hover{
+    font-weight: 1200;
+    transform: scale(1.1);
+}
+.ion-navicon {
+    color: #f0f0f0;
+    display: block;
+    text-decoration: none;
+    font-size: 1.5em;
+    background-color: #010203;
+    transition: all .3s ease-in-out;
+    position: fixed;
+    opacity: 0.8;
+    width: 70px;
+    height: auto;
+
+    
+}
+#menu:hover {
+    font-weight: 500;
+    transform: scale(1.1);
+}
+#nav-menu a {
+    display:block;
+    background-color: #000102;;
+}
+.show-menu {
+   
+    display:block;
+}
+nav ul {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px 0px 1px 0px;
+    border-left: 0;
+    border-right: 0;
+    border-color: #4b3ca3;
+    display: none;
+    list-style-type: none;
+    margin-left: -40px;
+}
+nav a {
+    font-size: 1.2em;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 20px;
+    text-transform: uppercase;
+    color: white;
+    transition: all .3s ease-in-out;
+    font-family: 'Roboto';
+    
+}
+#nav-menu a:hover{
+    
+    font-weight: 900;
+}
+#header1{
+    font-family: 'Roboto';
+    background: #157ebf;
+    transition:.4s;
+    
+
+}
+header li{
+    list-style: none;
+}
+
+.icons {
         width:100%;
         height:400px;
         background-color:#eee;
          position: absolute;
          transition: .5s ease;
-
     }
     .img1{
         padding:1px;
         width:100px;
         height:95px;
-        margin-left:80px;
-        margin-top: 10px;
-        border:outset 15px rgb(92, 24, 202);
         border-radius:20%;
         display: inline-block;
         transition: all 0.6s ease;
         transform:preserve-3d;
-        
-    }
-.img1:hover
-{
-    animation: animate 1s linear forwards;
+
+
     
 }
 .img2{
-    width:100px;
+    width:95px;
     height:95px;
-    margin-left:80px;
-    margin-top: 10px;
+   left:50%;
+   top:50%;
+   margin-top: 2px;
+    transform: translate(-0%, 0%);
 }
 .second ul{
     list-style: none;
@@ -135,20 +165,64 @@ nav {
     height:50px;
     margin-right: 50px;
     box-shadow: 0px 1px 3px red;
-    border-radius: 50px;
+   
     position: relative;
+    overflow: hidden;
+   
+    
 
 }
     .second li a{
-color: blueviolet;
+color:white;
 font-size: 24px;
 position: absolute;
 top:50%;
 left: 50%;
 transform: translate(-50%, -50%);
 
-    
 
+    
+    }
+.second li:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top:100%;
+    left: 0%;
+    display: inline-block;
+    position: absolute;
+    transition: .3s;
+    
+    
+}
+
+.second li:nth-child(1):before{
+    background-color: #3b5998;
+
+}
+.second li:nth-child(2):before{
+    background-color: #cd486b
+    ;
+    
+}
+.second li:nth-child(3):before{
+    background-color: rgb(128, 128, 16);
+    
+}
+.second li:hover:before{
+    top:0%;
+}
+
+.ion-navicon-round{
+width:50px;
+height:50px;
+margin-right: 50px;
+border-radius: 50px;
+position: relative;
+
+
+
+    
 }
 @keyframes animate{
     0%{
@@ -186,10 +260,12 @@ transform: translate(-50%, -50%);
         }
     
 
-    
-        
-
-    }
+    }#section-d progressbar{
+        margin: 20px;
+        width: 400px;
+        height: 8px;
+       
+}
     
     .webdeveloper{
         width:100%;
@@ -228,7 +304,7 @@ transform: translate(-50%, -50%);
         text-align:center;
 
     }
-    p{
+    .section-b p{
         margin:0;
         padding:1em 0;
     }
@@ -241,6 +317,7 @@ transform: translate(-50%, -50%);
         border:1px double grey;
         margin: .5em 0;
         overflow-y: scroll;
+        
         
         
     }
@@ -265,6 +342,7 @@ transform: translate(-50%, -50%);
         min-height: 455px;
        color: white;
        text-align: center;
+       margin-top:-90px;
        
     }
 .bg-image{
@@ -277,15 +355,13 @@ width:100%;
 height:450px;
 
 
-}
-#section-a{
-    background: #eaeaee;
-    color: #333;
-  
-    
-    
 
 }
+#section-a{
+    background: #ffffff;
+    color: #333;
+  
+} 
 #section-b{
    
     padding: 2em 1em 1em;
@@ -299,14 +375,15 @@ height:450px;
      margin-bottom: 1em;
      background: #fff;
      color: #333;
+     
  }
  #section-d{
     background-color: white;
     color: #333;
-    padding-top:250px;
+    
     padding-bottom:100px;
     margin:0 auto;
-    color: white;
+    
     
     
 
@@ -334,29 +411,23 @@ color: white;
     
         .text{
             display:block;
-            margin-top:90px ;
-            font-size: px;
             font-weight: 700;
             letter-spacing: 0.3em;
             text-transform: uppercase;
             color: gray;
             width: 50% auto;
-            animation: bouncetext 3s infinite;
+            margin-bottom: 30px;
             
         
       }
 
-      @keyframes bouncetext{
-        25%{transform:translateX(10px); color:lightcyan;}
-        50%{transform:translateX(0); color:lightcyan;}
-        75%{transform:translateX(-10px);}
-        
-      }
+    
       
       .text:hover{
         
-        color: red;
+        font-weight: 900;
       }
+    
       h3{
           font-size: 175%;
           line-height: 155%;
@@ -370,22 +441,63 @@ color: white;
           background: grey;
           opacity: 0.8;
       }
+      .text{
+        display:block;
+       margin-top:90px ;
+         font-size: 25px;
+       font-weight: 700;
+       letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: gray;
+      }
 
 
     
     @media screen and (min-width : 645px) {
       
-        
+        #section-a{
+            display: flex;
+            justify-content: space-around;
+            margin: 0px 1%;
+            padding: 20px 10px;
+            width: 96%;
+           
+        }
+          h3{
+          width: 100%;
+          display: block;
+          height: 60px;
+          
+        }
+        .skills{
+            font-size: 1.2em;
+            font-weight: 900;
+            text-decoration: none;
+            padding: 0px;
+            margin-top: 15px;
+            margin-left: 10px;
+            text-transform: uppercase;
+            color: white;
+            transition: all .3s ease-in-out;
+            background-color: rgb(0, 0, 0);
+            
+        }
+        .img1{
+            margin-right:10px;
+            position: relative;
+        }
       
         #section-b ul{
             display: flex;
             justify-content: space-around;
+            width: 90%;
         }
         
         #section-b li{
-            width: 40%;}
-            height: 30%;
-            
+            width: 40%;
+            height:30%;
+        }
+        
             article {
                 background-color:#125244;
                 padding-top:20px;
@@ -406,21 +518,60 @@ color: white;
                 color: #333;
                 padding-bottom: 8em;
                 
+                
+                
             }            
-            #section-d .img2{
-                width:200px;
-                height:180px;
-                margin-left:80px;
-                margin-top: 10px;
-                padding: 15px;
-                position: relative;
-                border: 10px solid black;
-                border-radius: 100%;
-                border-top-color: #ff6a00;
-               
+            #section-d ul{
+                list-style: none;
                 
             }
+           
             
+            #section-d ul li{
+                display: inline-block;
+                width:100px;
+                height:100px;
+                margin-right: 50px;
+                box-shadow: 0px 1px 3px red;
+                border-radius: 100px;
+                position: relative;
+                overflow: hidden;
+                           
+
+            }
+            #section-d ul li:before{
+                
+                content: '';
+                width: 100%;
+                height: 100%;
+                top:100%;
+                left: 50%;
+                display: inline-block;
+                position: absolute;
+                transition: .3s;
+            }
+
+        
+            #section-d ul :nth-child(1):before{
+               background-color: pink;
+            }
+            #section-d ul :nth-child(2):before{
+                background-color: blue;
+            }
+            #section-d ul :nth-child(3):before{
+                background-color:black;
+            }
+            #section-d ul :nth-child(4):before{
+                background-color:gray;
+
+            }
+            #section-d ul :nth-child(5):before{
+                background-color: green;
+            }
+            #section-d ul :nth-child(6):before{
+                background-color:red;
+            }
+
     
              .text{
             display:block;
@@ -433,31 +584,21 @@ color: white;
         
         
       }
+      #section-d ul li:hover:before{
+          top:0%;
+      }
 
-      @keyframes bouncetext{
-        25%{transform:translateX(10px); color:lightcyan;}
-        50%{transform:translateX(0); color:lightcyan;}
-        75%{transform:translateX(-10px);}
+
       }
       
       .text:hover{
         
-        color: red;
+       font-weight: 900;
         
       }
 
 
-    
-        
-            @keyframes round {
-                from{transform: rotate(0deg)}
-                to{transform:rotate(360deg)}
-            }
-            #section-d .img2:hover{
-                animation:round 1s linear ;
-                transition: border 0.3s linear 0s;
-            }
-       
+            
        
        
        
