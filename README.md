@@ -53,7 +53,8 @@ The problem is on all of the three pages.
 on the Resume page the javascript of timeline isnt very consistency and smooth; this is due me having to change the code from max width to min width which then eventually made me leave it as it is due to the time getting closer to the assisngement deadline.
 
 
-
+## Google Maps api problem
+My google maps api doesnt seem to work as there seems to be error, on the javascript.
 
 
 ### refrences used
